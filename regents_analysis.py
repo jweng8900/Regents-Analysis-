@@ -106,7 +106,7 @@ plt.xticks(rotation=45)
 plt.tight_layout()
 plt.show()
 
-filtered_manhattan_pf = contains_m_pf[contains_m_pf['school_level'].isin(['K-8', 'High School', 'K-12 all grades'])]
+filtered_manhattan_pf = contains_m_pf[contains_m_pf['school_level'].isin(['K-8', 'High school', 'K-12 all grades'])]
 plt.figure(figsize=(14, 8))
 sns.lineplot(data=filtered_manhattan_pf, x='regents_exam', y='mean_score', hue='school_level', marker='o', palette='viridis')
 plt.title('Mean Scores of Different Regents Exams by School Level in Manhattan')
